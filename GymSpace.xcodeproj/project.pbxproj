@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3ECA099D2FA6982A00B5E153 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9F6B422FA514250076BF3B /* RealmSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3E9255902F27C0D50070807F /* GymSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECA099D2FA6982A00B5E153 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = GymSpace;
 			packageProductDependencies = (
+				3E9F6B422FA514250076BF3B /* RealmSwift */,
 			);
 			productName = GymSpace;
 			productReference = 3E9255902F27C0D50070807F /* GymSpace.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 3E9255872F27C0D50070807F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3E9F6B3F2FA514250076BF3B /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3E9255912F27C0D50070807F /* Products */;
 			projectDirPath = "";
@@ -345,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E9F6B3F2FA514250076BF3B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = community;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E9F6B422FA514250076BF3B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E9F6B3F2FA514250076BF3B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3E9255882F27C0D50070807F /* Project object */;
 }
